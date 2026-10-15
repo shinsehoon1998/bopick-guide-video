@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>보픽플래너 이용설명 영상</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<style>
+  :root {
+    --navy: #0B1B3A;
+    --blue: #2F6BFF;
+    --ink: #0E1726;
+    --muted: #5B6578;
+    --line: #E3E8F2;
+    --surface: #FFFFFF;
+    --bg: #F4F6FB;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: Pretendard, -apple-system, "Apple SD Gothic Neo", sans-serif;
+    line-height: 1.55;
+  }
+  header { background: var(--navy); color: #fff; padding: 40px 16px 120px; }
+  main, header .wrap { max-width: 880px; margin: 0 auto; }
+  .eyebrow { font-size: 13px; letter-spacing: .08em; color: #9DB6FF; font-weight: 600; margin: 0 0 8px; }
+  h1 { font-size: clamp(26px, 4vw, 36px); margin: 0 0 8px; letter-spacing: -.02em; }
+  header p { margin: 0; color: #C9D3E8; }
+  main { padding: 0 16px 64px; margin-top: -88px; }
+  video {
+    width: 100%; display: block; border-radius: 14px; background: #000;
+    box-shadow: 0 24px 48px -20px rgba(11, 27, 58, .55);
+  }
+  h2 { font-size: 15px; color: var(--muted); font-weight: 600; margin: 40px 0 12px; }
+  ul { list-style: none; margin: 0; padding: 0; background: var(--surface); border: 1px solid var(--line); border-radius: 14px; }
+  li + li { border-top: 1px solid var(--line); }
+  a.row {
+    display: flex; gap: 16px; align-items: center; padding: 18px 20px;
+    color: inherit; text-decoration: none; transition: background .15s;
+  }
+  a.row:hover { background: #F0F4FF; }
+  a.row:focus-visible { outline: 3px solid var(--blue); outline-offset: -3px; border-radius: 14px; }
+  .tag { flex: none; width: 40px; font-size: 12px; font-weight: 700; color: var(--blue); }
+  .body { flex: 1; min-width: 0; }
+  .name { font-weight: 600; }
+  .desc { font-size: 14px; color: var(--muted); }
+  .size { flex: none; font-size: 13px; color: var(--muted); }
+  footer { margin-top: 24px; font-size: 13px; color: var(--muted); }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <p class="eyebrow">BOPICK PLANNER · 팀 공유용</p>
+    <h1>보픽플래너 이용설명 영상</h1>
+    <p>핀이가 설계사의 하루를 따라가며 앱 사용법을 소개합니다 · 4분 4초 · 1080p</p>
+  </div>
+</header>
+<main>
+  <video src="guide-video.mp4" controls preload="metadata" playsinline></video>
+
+  <h2>파일 받기</h2>
+  <ul>
+    <li><a class="row" href="guide-video.mp4" download="보픽플래너_이용설명_영상_v3.3_1080p.mp4">
+      <span class="tag">영상</span>
+      <span class="body"><span class="name">완성 영상</span><br><span class="desc">자막·내레이션·배경음 포함 최종본 (v3.3)</span></span>
+      <span class="size">MP4 · 30MB</span></a></li>
+    <li><a class="row" href="tts-full.mp3" download="보픽플래너_이용설명_TTS_전체.mp3">
+      <span class="tag">TTS</span>
+      <span class="body"><span class="name">내레이션 전체</span><br><span class="desc">목소리만 · 배경음·효과음 없음 · 영상과 길이가 같아 0초에 맞추면 싱크가 맞습니다</span></span>
+      <span class="size">MP3 · 5.9MB</span></a></li>
+    <li><a class="row" href="tts-scenes.zip" download="보픽플래너_이용설명_TTS_장면별.zip">
+      <span class="tag">TTS</span>
+      <span class="body"><span class="name">장면별 내레이션 19개 + 대본</span><br><span class="desc">S01~S15 장면 단위 파일과 장면별 시작 시각·대본(대본.txt)</span></span>
+      <span class="size">ZIP · 3.6MB</span></a></li>
+    <li><a class="row" href="subtitles.srt" download="보픽플래너_이용설명_자막.srt">
+      <span class="tag">자막</span>
+      <span class="body"><span class="name">자막 파일</span><br><span class="desc">장면별 내레이션 시각에 맞춘 SRT</span></span>
+      <span class="size">SRT · 4KB</span></a></li>
+  </ul>
+  <footer>내레이션은 ElevenLabs로 만든 TTS입니다. 팀 내부 공유용이니 외부에 게시하기 전에 대표 확인을 받아 주세요.</footer>
+</main>
+</body>
+</html>
